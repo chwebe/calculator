@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
     background-color: #000000;
-  color: #ffffff;
+    color: #ffffff;
 }
 
 body {
@@ -17,8 +17,10 @@ body {
 .calculator {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 10px;
     width: 400px;
+    height: 550px;
     padding: 10px;
     border-radius: 10px;
     background-color: #1e1e1e;
@@ -31,20 +33,44 @@ body {
     justify-content: flex-end;
     background-color: #2e2e2e;
     border-radius: 10px;
+    padding: 5px;
 }
 
 .display .current-operand {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;    
+    padding: 10px;  
 }
 
 .display .current-operand strong {
-    
+    font-size: 3rem; 
 }
 
-.previous-operand {
+.buttons-container {
+    display: flex;
+    flex-direction: column;
     
+    gap: 2px;
+    flex: 1;
 }
 
+.button-row {
+    flex-wrap: nowrap;
+    display: flex;   
+    flex: 1;
+    gap: 2px;
+}
+
+.button-row button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid white;
+    height: 100%;
+    margin: 1px;
+    padding: 15px;
+}
+
+.button-row .zero {
+    flex-grow: 2.6;
+}
