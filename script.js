@@ -113,8 +113,3 @@ buttons.forEach(button => {
 
     });
 });
-
-console.log(calculator(10, 20, '+'));
-console.log(calculator(10, 20, '-'));
-console.log(calculator(9, 20, '×'));
-console.log(calculator(0, 20, '÷'));
